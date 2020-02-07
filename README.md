@@ -21,9 +21,6 @@ Here is a really quick guide to help you get started instantly:
 ## Sample usage
 `<filename> "sample note"`
 
-`<filename> -vl`
+`<filename> -vl` (-v: verbose, -l: list)
 
 `    1  20-02-07 15:53:45       sample note`
-     
--v: verbose
--l: list
