@@ -16,7 +16,7 @@ Here is a really quick guide to help you get started instantly:
 `<filename>`
 
 ##### To display all available options:
-`<filename> -h`
+`<filename> -h` (-h: help)
 
 ## Sample usage
 `<filename> "sample note"`
