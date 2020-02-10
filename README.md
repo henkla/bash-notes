@@ -2,10 +2,17 @@
 A quick and easy way to take and store notes on the fly from the bash shell.
 
 ## Setup
-1. put file in bin folder of choice
-2. `chmod u+x <filename>`
-3. put location in PATH: `PATH=$PATH:/dir/where/file/is/located`
-4. create an alias for script execution: Ex: `echo 'alias note='<filename>' >> ~/.bashrc'`
+##### 1. put file in bin folder of choice
+`alias bindir='/some/location/then/bin' && mkdir -p $bindir && cp /location/of/script/<filename> $bindir`
+
+##### 2. make script executable
+`chmod u+x <filename>`
+
+##### 3. put location in PATH variable
+`echo 'PATH=$PATH:/dir/where/file/is/located' >> ~/.bashrc`
+
+##### 4. create an alias for script execution (optional)
+`echo 'alias note='<filename>' >> ~/.bashrc'`
 
 ## Usage
 Here is a really quick guide to help you get started instantly:
