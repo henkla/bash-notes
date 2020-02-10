@@ -32,7 +32,7 @@ function list_entries () {
     if [[ $verbose -eq 1 ]]; then
         cat -n $target
     else
-	      cat $target
+	cat $target
     fi
 }
 
@@ -48,20 +48,19 @@ function delete_entries () {
     echo "Are you sure? (y/n)"
 
     while [[ ! $answered ]]; do
-
-	      read -r -n 1 -s answer
-	      if [[ $answer = [Nn] ]]; then
+    	read -r -n 1 -s answer
+	if [[ $answer = [Nn] ]]; then
             answered="no"
         elif [[ $answer = [Yy] ]]; then
-	          answered="yes"
-	      fi
+	    answered="yes"
+	fi
 
     done
 
     if [[ $answered == "yes" ]]; then
-	      local row=$(sed "${1}q;d" "$target" | cut -f2)
-	      sed -in "${1}d" $target
-	      print_if_verbose "Deleted entry: \"$row\""
+	local row=$(sed "${1}q;d" "$target" | cut -f2)
+	sed -in "${1}d" $target
+	print_if_verbose "Deleted entry: \"$row\""
     else
         print_if_verbose "No entries were deleted"
     fi
@@ -71,12 +70,12 @@ function show_help () {
     print_if_verbose "Displaying help section"
     echo ""
     echo "note		-a              Add an entry to the notebook"
-    echo "note		<ENTRY>		      ... (quickly add an entry)"
-    echo "note		-v		          Be verbose"
-    echo "note		-l		          List all entries"
-    echo "note		-d <ROW>  	    Delete entry in specific row"
+    echo "note		<ENTRY>		... (quickly add an entry)"
+    echo "note		-v		Be verbose"
+    echo "note		-l		List all entries"
+    echo "note		-d <ROW>  	Delete entry in specific row"
     echo "note		-h            	Show this help section"
-    echo "note		-c 		          Count the number of entries"
+    echo "note		-c 		Count the number of entries"
 }
 
 function count_entries () {
