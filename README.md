@@ -3,7 +3,7 @@ A quick and easy way to take and store notes on the fly from the bash shell.
 
 ## Setup
 ##### 1. put file in bin folder of choice
-`alias bindir='/some/location/then/bin' && mkdir -p $bindir && cp /location/of/script/<filename> $bindir`
+`bin_dir='/some/location/then/bin' && mkdir -p $bin_dir && cp /location/of/script/<filename> $bin_dir`
 
 ##### 2. make script executable
 `chmod u+x <filename>`
