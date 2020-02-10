@@ -54,7 +54,6 @@ function delete_entries () {
         elif [[ $answer = [Yy] ]]; then
 	    answered="yes"
 	fi
-
     done
 
     if [[ $answered == "yes" ]]; then
@@ -91,9 +90,11 @@ function count_entries () {
 if [[ $# -gt 0 ]] && [[ $1 != -* ]]; then
     echo "$(date +%y-%m-%d\ %T)	$*" >> $target
     exit 0
+    
 #show entries
 elif [[ $# -eq 0 ]]; then
     do_list=1
+    
 # parse options and argument
 else
     while getopts ":hvlad:c" opt; do
