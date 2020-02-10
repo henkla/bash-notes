@@ -1,16 +1,13 @@
 #!/bin/bash
 
-
 # Author:	Henrik Larsson
 # E-mail:	lthlarsson@gmail.com
 # Usage:	<filename> -h
 # Date: 	2020-02-03
 
-
 # GLOBAL VARIABLES
 target="${HOME}/notes.txt"
 numeric="^[0-9]+$"
-
 
 # POSSIBLE ACTIONS
 verbose=0
@@ -19,7 +16,6 @@ do_list=0
 do_add=0
 do_delete=0
 do_count=0
-
 
 # FUNCTIONS DEFINING THE ACTIONS
 function print_if_verbose () {
