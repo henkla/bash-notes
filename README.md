@@ -12,7 +12,7 @@ A quick and easy way to take and store notes on the fly from the bash shell.
 `echo 'PATH=$PATH:/dir/where/file/is/located' >> ~/.bashrc`
 
 ##### 4. create an alias for script execution (optional)
-`echo 'alias note='<filename>' >> ~/.bashrc'`
+`echo "alias note='<filename>'" >> ~/.bashrc`
 
 ## How to use it
 Here is a really quick guide to help you get started instantly:
